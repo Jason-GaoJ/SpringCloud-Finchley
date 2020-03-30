@@ -8,10 +8,10 @@
         <version>2.2.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.jason.finchley</groupId>
-    <artifactId>actuator</artifactId>
+    <groupId>com.jason</groupId>
+    <artifactId>feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>actuator</name>
+    <name>feign</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -21,7 +21,13 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>2.2.1.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -36,6 +42,19 @@
             </exclusions>
         </dependency>
     </dependencies>
+
+    <!-- 引入spring cloud的依赖，不能少，主要用来管理Spring Cloud生态各组件的版本 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>

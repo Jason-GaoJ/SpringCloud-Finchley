@@ -23,7 +23,7 @@
 * Spring Cloud Consul：服务发现与配置管理工具。
 * Spring Cloud Stream：通过 Redis、Rabbit 或者 Kafka 实现的消费微服务，可以通过简单的声明式模型来发送和接收消息。
 * Spring Cloud AWS：用于简化整合 Amazon web Service 的组件。
-* SPring Cloud Security：安全工具包，提供在 Zuul 代理中对 OAuth2 客户端请求的中继器。
+* Spring Cloud Security：安全工具包，提供在 Zuul 代理中对 OAuth2 客户端请求的中继器。
 * Spring Cloud Sleuth：Spring Cloud 应用的分布式跟踪实现，可以完美整合 Zipkin。
 * Spring Cloud ZooKeeper：基于 ZooKeeper 的服务发现与配置管理组件。
 * Spring Cloud Starters：Spring Cloud 的基础组件，它是基于 Spring Boot 风格项目的基础依赖模块。
