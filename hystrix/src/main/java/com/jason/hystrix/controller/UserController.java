@@ -22,7 +22,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class UserController {
     @Autowired
-    UserServiceImpl userService;
+    UserService userService;
 
     @GetMapping("users/{id}")
     public User findById(@PathVariable Long id) {
