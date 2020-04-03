@@ -1,13 +1,15 @@
-package com.jason.ribbon;
+package com.jason.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
+@EnableFeignClients
 @SpringBootApplication
-public class RibbonApplication {
+public class FeignApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RibbonApplication.class, args);
+        SpringApplication.run(FeignApplication.class, args);
     }
 
 }

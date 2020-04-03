@@ -1,12 +1,10 @@
-package com.jason.ribbon;
+package com.jason.zuul;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RibbonApplicationTests {
+class FeignApplicationTests {
 
-    @Test
     void contextLoads() {
     }
 

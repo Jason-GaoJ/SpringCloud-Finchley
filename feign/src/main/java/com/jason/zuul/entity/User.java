@@ -1,4 +1,4 @@
-package com.jason.feign.entity;
+package com.jason.zuul.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

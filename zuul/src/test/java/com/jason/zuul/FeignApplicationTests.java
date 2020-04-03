@@ -1,4 +1,4 @@
-package com.jason.feign;
+package com.jason.zuul;
 
 import org.springframework.boot.test.context.SpringBootTest;
 

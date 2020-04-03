@@ -1,6 +1,6 @@
-package com.jason.feign.service;
+package com.jason.zuul.service;
 
-import com.jason.feign.entity.User;
+import com.jason.zuul.entity.User;
 import feign.Logger;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
