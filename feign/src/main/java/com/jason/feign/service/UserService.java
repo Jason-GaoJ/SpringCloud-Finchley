@@ -1,6 +1,6 @@
-package com.jason.zuul.service;
+package com.jason.feign.service;
 
-import com.jason.zuul.entity.User;
+import com.jason.feign.entity.User;
 import feign.Logger;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @date 2020/4/1 19:02
  * @description
  */
-@FeignClient(name = "service-provider",configuration = UserFeignClient.class)
-public interface UserFeignClient {
+@FeignClient(name = "service-provider",configuration = UserService.UserFeignConfig.class)
+public interface UserService {
 
     @GetMapping("/users/{id}")
     User findById(@PathVariable("id")Long id);
